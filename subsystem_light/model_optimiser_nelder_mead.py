@@ -17,9 +17,9 @@ class NelderMeadModel:
 
         # Parameters
         self.name = 'Nelder-Mead'
-        self.refl = False
+        self.refl = True
         self.save_fig = True
-        self.save_log = True
+        self.save_log = False
 
         if self.save_log:
             self.data = []
@@ -31,7 +31,7 @@ class NelderMeadModel:
 
         # Objective function. We want to maximise this
         self.result = minimize(self.obj_fun, MP.INITIAL_GUESS_LAMP_LOCS, method='Nelder-Mead', tol=None,
-                               callback=None, options={'disp': True, 'adaptive': True})
+                               callback=None, options={'disp': True, 'adaptive': True, 'maxiter': 3000})
 
         # What is the result of the optimisation?
         print(self.result)

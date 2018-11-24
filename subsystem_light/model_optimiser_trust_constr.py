@@ -17,7 +17,7 @@ class TrustConstrModel:
         self.counter = 0
 
         # Parameters
-        self.name = 'Trust-Constr Cons.'
+        self.name = 'Trust-Constr'
         self.refl = True
         self.save_fig = True
         self.save_log = False
@@ -39,8 +39,7 @@ class TrustConstrModel:
         # 360 = 5000?
         # Objective function. We want to maximise this
         self.result = minimize(self.obj_fun, MP.INITIAL_GUESS_LAMP_LOCS, method='trust-constr', jac='3-point',
-                               constraints=self.constraints, hess=BFGS(exception_strategy='skip_update'),
-                               options={'maxiter': 1000})
+                               constraints=self.constraints, hess=BFGS(exception_strategy='skip_update'))
 
         # What is the result of the optimisation?
         print(self.result)

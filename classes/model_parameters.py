@@ -29,18 +29,18 @@ class MP:
     LAMP_POW = np.array(LAMP_POW) * POWER_SCALING_FACTOR
 
     # Albedo
-    ALBEDO = 0.75
-    BOUNCES = 6
+    ALBEDO = 0.5
+    BOUNCES = 3
 
     # Plot parameters
-    N_LEVELS = 100
+    N_LEVELS = 20
 
     """
     Light Quality Subsystem
     """
 
     # Initial lamp location guess (design variables: [x1, y1, x2, y2, x3, y3])
-    INITIAL_GUESS_LAMP_LOCS = np.array([1, 1, 2, 2, 3, 2.5])
+    INITIAL_GUESS_LAMP_LOCS = np.array([0.68978269, 0.98767149, 1.78447148, 2.79305784, 3.66072114, 2.4])
     # INITIAL_GUESS_LAMP_LOCS_3D = np.array([1, 1, 1, 4, 4, 1, 6, 6, 1.5])
 
     # Linear Constraint Matrix
