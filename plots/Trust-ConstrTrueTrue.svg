@@ -62,8 +62,6 @@
 	.st56{fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;}
 </style>
 <g id="figure_1">
-	<g id="patch_1">
-	</g>
 	<g id="axes_1">
 		<g id="patch_2">
 			<path class="st0" d="M73.4,384.5H517V51.8H73.4V384.5z"/>
@@ -77,7 +75,7 @@
 			</clipPath>
 			<g class="st1">
 				
-					<image style="overflow:visible;enable-background:new    ;" width="7393" height="5545" id="image0a813d8f65" xlink:href="18334F8D467FB35F.png"  transform="matrix(6.000000e-02 0 0 -6.000000e-02 73.44 384.48)">
+					<image style="overflow:visible;enable-background:new    ;" width="7393" height="5545" id="image2bed757974" xlink:href="48B0DCD8C3DAE6D3.png"  transform="matrix(6.000000e-02 0 0 -6.000000e-02 73.44 384.48)">
 				</image>
 			</g>
 		</g>
@@ -2265,7 +2263,7 @@
 				<g id="line2d_1">
 					<g>
 						<g>
-							<path id="mc86f6f0049" class="st53" d="M73.4,384.5v3.5"/>
+							<path id="mf6afc2316c" class="st53" d="M73.4,384.5v3.5"/>
 						</g>
 					</g>
 				</g>
@@ -2630,7 +2628,7 @@
 				<g id="line2d_10">
 					<g>
 						<g>
-							<path id="md76dcd731c" class="st53" d="M73.4,384.5h-3.5"/>
+							<path id="m321cb13fbf" class="st53" d="M73.4,384.5h-3.5"/>
 						</g>
 					</g>
 				</g>
@@ -2930,7 +2928,7 @@
 				</clipPath>
 				<g class="st54">
 					<g>
-						<path id="me4e2256a23" class="st55" d="M515.9,390.5c1.6,0,3.1-0.6,4.2-1.8c1.1-1.1,1.8-2.7,1.8-4.2c0-1.6-0.6-3.1-1.8-4.2
+						<path id="ma4ba2e4417" class="st55" d="M515.9,390.5c1.6,0,3.1-0.6,4.2-1.8c1.1-1.1,1.8-2.7,1.8-4.2c0-1.6-0.6-3.1-1.8-4.2
 							c-1.1-1.1-2.7-1.8-4.2-1.8s-3.1,0.6-4.2,1.8c-1.1,1.1-1.8,2.7-1.8,4.2c0,1.6,0.6,3.1,1.8,4.2
 							C512.7,389.8,514.3,390.5,515.9,390.5z"/>
 					</g>

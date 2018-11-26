@@ -31,7 +31,7 @@ class NelderMeadModel:
 
         # Objective function. We want to maximise this
         self.result = minimize(self.obj_fun, MP.INITIAL_GUESS_LAMP_LOCS, method='Nelder-Mead', tol=None,
-                               callback=None, options={'disp': True, 'adaptive': True, 'maxiter': 3000})
+                               callback=None, options={'disp': True, 'adaptive': True, 'maxiter': 5000})
 
         # What is the result of the optimisation?
         print(self.result)

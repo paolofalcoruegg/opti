@@ -43,7 +43,11 @@ class PlotTestDistribution:
         ax = fig.add_subplot(111)
 
         # Plot background image of room
-        img = plt.imread("../classes/room_outline.png")
+        if not self.constrained:
+            img = plt.imread("../classes/room_outline.png")
+        else:
+            img = plt.imread("../classes/room_outline_constr.png")
+
         ax.imshow(img, extent=[0, MP.ROOM_LENGTH / MP.DXY, 0, MP.ROOM_WIDTH / MP.DXY])
 
         # Plot intensity distribution
@@ -67,6 +71,6 @@ class PlotTestDistribution:
 
         plt.show()
 
-# if __name__ == '__main__':
-#
-#    PlotTestDistribution((1, 1, 1.5, 2, 3, 2.5), 'Test', True, False)
+if __name__ == '__main__':
+
+    PlotTestDistribution((1, 1, 1.5, 2, 3, 2.5), 'Test', True, False, '', True)

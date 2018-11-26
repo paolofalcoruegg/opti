@@ -21,7 +21,7 @@ class TrustConstrModel:
         self.refl = True
         self.save_fig = True
         self.save_log = False
-        self.constrained = True
+        self.constrained = False
 
         if self.save_log:
             self.data = []
@@ -29,7 +29,7 @@ class TrustConstrModel:
         if self.constrained:
             self.constraints = LinearConstraint(MP.CONSTRAINT_MAT, MP.LOWER_BOUND, MP.UPPER_BOUND)
         else:
-            constraints = ()
+            self.constraints = ()
 
         print("Welcome! You are using a trust-constr optimiser.")
         print("Reflections: ", self.refl)
@@ -39,7 +39,7 @@ class TrustConstrModel:
         # 360 = 5000?
         # Objective function. We want to maximise this
         self.result = minimize(self.obj_fun, MP.INITIAL_GUESS_LAMP_LOCS, method='trust-constr', jac='3-point',
-                               constraints=self.constraints, hess=BFGS(exception_strategy='skip_update'))
+                               constraints=self.constraints, hess=BFGS(exception_strategy='damp_update'))
 
         # What is the result of the optimisation?
         print(self.result)
