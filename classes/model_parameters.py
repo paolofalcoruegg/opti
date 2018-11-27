@@ -16,6 +16,9 @@ class MP:
     ROOM_LENGTH = 4
     ROOM_WIDTH = 3
     ROOM_HEIGHT = 2.3
+    F_PLUG_POSITION = [2.3, 0.05]
+    S_PLUG_POSITION = [3.95, 2]
+
 
     # Number of lamps
     N_LAMPS = 3
@@ -79,3 +82,4 @@ class MP:
     WORK_COST = 60
     ENERGY_COST = 0.12
     AVG_HOURS_PER_YEAR = float(1500 / 1000)
+
