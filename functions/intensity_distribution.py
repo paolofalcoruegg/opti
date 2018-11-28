@@ -3,7 +3,7 @@ from classes.room import Room
 import numpy as np
 import numpy.ma as ma
 
-def get_intensity_distr(lamp_locs, refl=False):
+def get_intensity_distr(lamp_locs, refl=False, pow_var=False):
     """
     Calculates the intensity distribution within a room with n number of light sources
     """
@@ -61,9 +61,14 @@ def get_intensity_distr(lamp_locs, refl=False):
                     light_intensity = np.zeros_like(distance_to_lamp_n_filtered)
                     initialised = True
 
-                # Find light intensity distribution
-                light_intensity_n = ((MP.ALBEDO ** (abs(2 * i))) * (MP.LAMP_EFFICIENCY * MP.LAMP_POW[j]) /
-                                     (4 * np.pi)) / (distance_to_lamp_n_filtered * MP.DXY)
+                if not pow_var:
+                    # Find light intensity distribution
+                    light_intensity_n = ((MP.ALBEDO ** (abs(2 * i))) * (MP.LAMP_EFFICIENCY * MP.LAMP_POW[j]) /
+                                         (4 * np.pi)) / (distance_to_lamp_n_filtered * MP.DXY)
+                else:
+                    # Find light intensity distribution
+                    light_intensity_n = ((MP.ALBEDO ** (abs(2 * i))) * (MP.LAMP_EFFICIENCY * lamp_locs[5+j]) /
+                                         (4 * np.pi)) / (distance_to_lamp_n_filtered * MP.DXY)
 
                 # Increment light intensity array
                 light_intensity += light_intensity_n

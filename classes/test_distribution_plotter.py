@@ -2,6 +2,7 @@ import numpy as np
 import numpy.ma as ma
 from classes.model_parameters import MP
 from functions.intensity_distribution import get_intensity_distr
+from functions.cost import cost
 import matplotlib.pyplot as plt
 import operator as op
 
@@ -18,7 +19,8 @@ class PlotTestDistribution:
                  save_fig=False,
                  fig_name='',
                  constrained=False,
-                 cost_subsystem=False):
+                 cost_subsystem=False,
+                 pow_var = False):
 
         # These cannot be taken from the enum, as they vary upon each instatiation
         self.lamp_locs = lamp_locs
@@ -27,6 +29,7 @@ class PlotTestDistribution:
         self.save_fig = save_fig
         self.fig_name = fig_name
         self.constrained = constrained
+        self.pow_var = pow_var
         # Define plugs position
         self.firstplug_position = MP.F_PLUG_POSITION
         self.secondplug_position = MP.S_PLUG_POSITION
@@ -85,7 +88,8 @@ class PlotTestDistribution:
                """
 
         #light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
-        light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
+        light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl, self.pow_var)
+        total_cost = cost(self.lamp_locs)
 
         # Fill masked areas (lamps) with maximum value
         light_intensity = ma.filled(light_intensity, np.amax(light_intensity))
@@ -143,8 +147,8 @@ class PlotTestDistribution:
 
         # Layout & Titles
         plt.suptitle(self.name + " Optimisation", fontweight='bold')
-        plt.title("Reflections: " + str(self.refl) + ", Constraints: " + str(self.constrained)
-                  + ", Minimum: " + str(round(minimum, 2)), fontsize='large')
+        plt.title("Constraints: " + str(self.constrained) + ", Minimum: " + str(round(minimum, 2)) +
+                  ", Cost: " + str(round(total_cost, 2)), fontsize='large')
         plt.xlabel('Room X-Position (cm)')
         plt.ylabel('Room Y-Position (cm)')
         # Export figure
@@ -158,4 +162,4 @@ class PlotTestDistribution:
 
 if __name__ == '__main__':
 
-    PlotTestDistribution((1, 1, 1.5, 2, 3, 2.5), 'Test', True, False, '', True)
+    PlotTestDistribution((1, 1, 1.5, 2, 3, 2.5), 'Test', True, False, '', True, True)
