@@ -19,11 +19,7 @@ def cost(vars, pow_var=False):
 
     c_work = np.log(MP.N_LAMPS) * MP.WORK_COST
 
-    # Note to Bea: This was just a little experiment. Assume pow_var is always false
-    if not pow_var:
-        c_operation = sum(MP.LAMP_POW) * MP.AVG_HOURS_PER_YEAR * MP.ENERGY_COST
-    else:
-        c_operation = (vars[6] + vars[7] + vars[8]) * MP.AVG_HOURS_PER_YEAR * MP.ENERGY_COST
+    c_operation = sum(MP.LAMP_POW) * MP.AVG_HOURS_PER_YEAR * MP.ENERGY_COST
 
     c_tot = c_cable_tot + c_lamp + c_work + c_operation
 

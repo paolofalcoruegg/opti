@@ -89,28 +89,3 @@ class MP:
     # Weight of different subsystems
     WEIGHT_LIGHT = 1
     WEIGHT_COST = 1
-
-    # With power as design variables
-    INITIAL_GUESS_LAMP_LOCS_POW_VAR = np.array([0.68978269, 0.98767149, 1.78447148, 2.79305784, 3.66072114, 2.4,
-                                            50, 120, 50])
-
-    # Linear Constraint Matrix
-    CONSTRAINT_MAT_POW = [[1, 0, 0, 0, 0, 0, 0, 0, 0],
-                          [0, 1, 0, 0, 0, 0, 0, 0, 0],
-                          [0, 0, 1, 0, 0, 0, 0, 0, 0],
-                          [0, 0, 0, 1, 0, 0, 0, 0, 0],
-                          [0, 0, 0, 0, 1, 0, 0, 0, 0],
-                          [0, 0, 0, 0, 0, 1, 0, 0, 0],
-                          [0, 0, 0, 0, 0, 0, 1, 0, 0],
-                          [0, 0, 0, 0, 0, 0, 0, 1, 0],
-                          [0, 0, 0, 0, 0, 0, 0, 0, 1]]
-
-    G7 = [20, 80]
-    G8 = [90, 150]
-    G9 = [20, 80]
-
-    CONSTRAINTS_POW = [G1, G2, G3, G4, G5, G6, G7, G8, G9]
-
-    # Linear Constraint Bounds
-    LOWER_BOUND_POW = [constraint[0] for constraint in CONSTRAINTS_POW]
-    UPPER_BOUND_POW = [constraint[1] for constraint in CONSTRAINTS_POW]

@@ -19,8 +19,7 @@ class PlotTestDistribution:
                  save_fig=False,
                  fig_name='',
                  constrained=False,
-                 cost_subsystem=False,
-                 pow_var = False):
+                 cost_subsystem=False):
 
         # These cannot be taken from the enum, as they vary upon each instatiation
         self.lamp_locs = lamp_locs
@@ -29,7 +28,7 @@ class PlotTestDistribution:
         self.save_fig = save_fig
         self.fig_name = fig_name
         self.constrained = constrained
-        self.pow_var = pow_var
+
         # Define plugs position
         self.firstplug_position = MP.F_PLUG_POSITION
         self.secondplug_position = MP.S_PLUG_POSITION
@@ -88,7 +87,7 @@ class PlotTestDistribution:
                """
 
         #light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
-        light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl, self.pow_var)
+        light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
         total_cost = cost(self.lamp_locs)
 
         # Fill masked areas (lamps) with maximum value
