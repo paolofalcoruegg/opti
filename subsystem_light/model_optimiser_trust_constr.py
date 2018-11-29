@@ -21,7 +21,7 @@ class TrustConstrModel:
         self.refl = True
         self.save_fig = True
         self.save_log = False
-        self.constrained = False
+        self.constrained = True
 
         if self.save_log:
             self.data = []

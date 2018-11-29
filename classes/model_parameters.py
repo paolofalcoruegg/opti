@@ -63,7 +63,7 @@ class MP:
 
     # Lamp 3: Desk: Bound Constraints (x3, y3)
     G5 = [2.3 + LAMP_RADII[2], 4 - LAMP_RADII[2]]
-    G6 = [1.9 + LAMP_RADII[2], 3 - LAMP_RADII[2]]
+    G6 = [1.1 + LAMP_RADII[2], 3 - LAMP_RADII[2]]
 
     CONSTRAINTS = [G1, G2, G3, G4, G5, G6]
 
