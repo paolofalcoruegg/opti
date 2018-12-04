@@ -21,6 +21,6 @@ system_level      Contai  ns the system-level optimisation
 
 subsystem_cost    Contains Bea Lopez-Neira's individual contribution
 
-subsystem_light   Contains Paolo's individual contribution, available here: [link](https://github.com/pa17/opti/tree/master/subsystem_light)
+[subsystem_light](https://github.com/pa17/opti/tree/master/subsystem_light)   Contains Paolo's individual contribution
 
 In order to ease execution of the code to reproduce results, an optimisation is presented in the form of a jupyter notebook for both subsystems and for the system-level analysis. There are a total of three tutorials, one in each of the above folders.
