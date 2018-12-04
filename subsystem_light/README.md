@@ -24,7 +24,8 @@ Typycial performance of the notebook:
 Execution time: about 7 minutes
 Processor and OS: 2.4 Ghz Macbook Pro late 2012
 
-1. List any software/library prerequisites/dependencies needed to run the code
-2. Specify the main script 
-3. Provide an indication of the typical performance (e.g. execution time, with
-indication of processor and operating system)
+Derivation
+----------
+
+[[https://github.com/pa17/opti/blob/master/subsystem_light/derivation.png|alt=octocat]]
+
