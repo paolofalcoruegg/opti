@@ -27,5 +27,4 @@ Processor and OS: 2.4 Ghz Macbook Pro late 2012
 Derivation
 ----------
 
-[[https://github.com/pa17/opti/blob/master/subsystem_light/derivation.png|alt=octocat]]
-
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_light/derivation.png)
