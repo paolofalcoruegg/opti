@@ -9,7 +9,7 @@ The code runs in Python 3.X and has the following dependencies:
 * numpy
 * jupyter (for tutorial only)
 
-You can install all of these with the following command: pip3 install numpy scipy matplotlib
+You can install all of these with the following command: pip3 install numpy scipy matplotlib jupyter
 
 
 Executing the Code
@@ -19,12 +19,15 @@ Please open a terminal window and change into this directory and run the followi
 
 Open the .ipynb file and follow instructions within the notebook
 
-Typycial performance of the notebook:
+Typical performance of the notebook:
 
 Execution time: about 7 minutes
-Processor and OS: 2.4 Ghz Macbook Pro late 2012
+
+Processor and OS: 2.5 GHz Intel Core i5 Macbook Pro, 8GB RAM
 
 Derivation
 ----------
+
+Please refer to the report for nomenclature.
 
 ![Derivation](https://github.com/pa17/opti/blob/master/subsystem_light/derivation.png)
