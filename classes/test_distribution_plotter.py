@@ -28,13 +28,14 @@ class PlotTestDistribution:
         self.save_fig = save_fig
         self.fig_name = fig_name
         self.constrained = constrained
+        self.cost_subsystem = cost_subsystem
 
         # Define plugs position
         self.firstplug_position = MP.F_PLUG_POSITION
         self.secondplug_position = MP.S_PLUG_POSITION
 
         # Plot
-        if not cost_subsystem:
+        if not self.cost_subsystem:
             self.plot_intensity_distr()
         else:
             self.plot_cable_distribution()
@@ -152,7 +153,8 @@ class PlotTestDistribution:
         plt.ylabel('Room Y-Position (cm)')
         # Export figure
         if self.save_fig:
-            plt.savefig(self.fig_name + str(self.refl) + str(self.constrained) + '.svg', format='svg', dpi=1200)
+            plt.savefig('../plots/' + self.fig_name + str(self.refl) + str(self.constrained) + str(self.cost_subsystem) + 
+            	'.svg', format='svg', dpi=1200)
 
         # Show figure
         plt.show()
