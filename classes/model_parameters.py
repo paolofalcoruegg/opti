@@ -1,4 +1,5 @@
 import numpy as np
+from scipy.optimize import NonlinearConstraint, BFGS
 
 class MP:
     """
@@ -77,15 +78,61 @@ class MP:
 
     # Cost
     CABLE_COST = 4
-    LAMP_COST = 10
     WORK_COST = 60
     ENERGY_COST = 0.12
     AVG_HOURS_PER_YEAR = float(1500 / 1000)
+    INVESTMENT_FACTOR = 100
+    # Bea's add
+    # Initial characteristics for lamps
+    INITIAL_SOLUTION = np.array([0.68978269, 0.98767149, 1.78447148, 2.79305784, 3.66072114, 2.22234, 0.2])
+
+    # Efficiency, in a range from 0 to 1
+    G7 = [0.2, 1]
+
+    CONSTRAINT_MAT_EXT = [[1, 0, 0, 0, 0, 0, 0],
+                          [0, 1, 0, 0, 0, 0, 0],
+                          [0, 0, 1, 0, 0, 0, 0],
+                          [0, 0, 0, 1, 0, 0, 0],
+                          [0, 0, 0, 0, 1, 0, 0],
+                          [0, 0, 0, 0, 0, 1, 0],
+                          [0, 0, 0, 0, 0, 0, 1]]
+
+    # Add all constrains to limit all variables to 0
+
+    CONSTRAINTS_EXT = [G1, G2, G3, G4, G5, G6, G7]
+
+    # Linear Constraint Bounds
+    LOWER_BOUND_EXT = [constraint[0] for constraint in CONSTRAINTS_EXT]
+    UPPER_BOUND_EXT = [constraint[1] for constraint in CONSTRAINTS_EXT]
 
     """
     System Level
+
     """
 
     # Weight of different subsystems
     WEIGHT_LIGHT = 1
     WEIGHT_COST = 1
+
+"""
+FUNCTIONAL CONSTRAINTS
+"""
+
+def functional_constraint(variables):
+    c_cable_tot = 0
+
+    # Power would need to be 50 or 120 depending on which lamp it is reffereing to
+    total_power = sum(MP.LAMP_POW)
+
+    for i in range(3):
+        c_cable_tot += (abs(variables[2 * i]) + abs(variables[2 * i + 1])) + 1.6
+        c_cable_tot = c_cable_tot * MP.CABLE_COST
+
+    lamp_efficiency = variables[6]
+    c_operation = (total_power / lamp_efficiency) * MP.AVG_HOURS_PER_YEAR * MP.ENERGY_COST
+    c_lamp = (lamp_efficiency / 0.2)
+    c_tot_lamp_cost = MP.N_LAMPS * c_lamp
+    c_work = np.log(MP.N_LAMPS) * MP.WORK_COST
+    c_initial = (c_cable_tot + c_tot_lamp_cost + c_work)
+
+    return c_initial - MP.INVESTMENT_FACTOR * c_operation

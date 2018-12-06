@@ -2,7 +2,7 @@ import numpy as np
 import numpy.ma as ma
 from classes.model_parameters import MP
 from functions.intensity_distribution import get_intensity_distr
-from functions.cost import cost
+from functions.cost import cost_obj_fun
 import matplotlib.pyplot as plt
 import operator as op
 
@@ -89,7 +89,7 @@ class PlotTestDistribution:
 
         #light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
         light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
-        total_cost = cost(self.lamp_locs)
+        total_cost = cost_obj_fun(self.lamp_locs)
 
         # Fill masked areas (lamps) with maximum value
         light_intensity = ma.filled(light_intensity, np.amax(light_intensity))
