@@ -26,5 +26,5 @@ Derivation
 
 Please refer to the report for nomenclature.
 
-![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/maths.png)
-
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/cost.png)
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Objective_fun.png)
