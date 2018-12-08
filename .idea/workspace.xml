@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ab717940-6c01-4de6-bad6-662e8157454d" name="Default Changelist" comment="" />
+    <list default="true" id="ab717940-6c01-4de6-bad6-662e8157454d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/model_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/model_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/test_distribution_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test_distribution_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py" beforeDir="false" afterPath="$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py" beforeDir="false" afterPath="$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,40 +62,110 @@
         <counts>
           <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="png" value="3" />
-          <entry key="py" value="6" />
+          <entry key="png" value="6" />
+          <entry key="py" value="12" />
+          <entry key="svg" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Image" value="3" />
-          <entry key="Python" value="6" />
+          <entry key="Image" value="6" />
+          <entry key="Python" value="12" />
+          <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="209" />
+          <entry key="py" value="256" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="209" />
+          <entry key="Python" value="256" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subsystem_light/model_optimiser_trust_constr.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/test_distribution_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
+            <state relative-caret-position="1622">
+              <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/model_parameters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#62#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTruetest.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrueConstrShow.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Sys_Trust-ConstrTrueTrue.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions/cost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="332">
+              <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -130,15 +206,17 @@
         <option value="$PROJECT_DIR$/functions/intensity_distribution.py" />
         <option value="$PROJECT_DIR$/system_level/model_optimiser_trust_constr.py" />
         <option value="$PROJECT_DIR$/subsystem_light/model_optimiser_trust_constr.py" />
+        <option value="$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py" />
+        <option value="$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py" />
         <option value="$PROJECT_DIR$/classes/model_parameters.py" />
         <option value="$PROJECT_DIR$/classes/test_distribution_plotter.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="777" />
+    <option name="width" value="1440" />
+    <option name="height" value="837" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -185,11 +263,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/subsystem_light" />
+      <recent name="$PROJECT_DIR$/subsystem_cost" />
       <recent name="$PROJECT_DIR$/plots" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/code" />
-      <recent name="$PROJECT_DIR$/subsystem_light" />
-      <recent name="$PROJECT_DIR$/classes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -204,8 +282,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.model_optimiser_trust_constr">
-    <configuration name="model_optimiser_TNC" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.model_trust_constr_cost">
+    <configuration name="model_NelderMead_cost" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="opti" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -217,28 +295,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="model_optimiser_trust_constr (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="opti" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/system_level" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/system_level/model_optimiser_trust_constr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -289,6 +346,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="model_trust_constr_cost" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="opti" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/subsystem_cost" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_distribution_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="opti" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -313,17 +391,17 @@
     <list>
       <item itemvalue="Python.model_optimiser_trust_constr" />
       <item itemvalue="Python.test_distribution_plotter" />
-      <item itemvalue="Python.model_optimiser_TNC" />
-      <item itemvalue="Python.model_optimiser_trust_constr (1)" />
       <item itemvalue="Python.model_parameters" />
+      <item itemvalue="Python.model_trust_constr_cost" />
+      <item itemvalue="Python.model_NelderMead_cost" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.model_trust_constr_cost" />
         <item itemvalue="Python.model_optimiser_trust_constr" />
+        <item itemvalue="Python.model_NelderMead_cost" />
         <item itemvalue="Python.test_distribution_plotter" />
         <item itemvalue="Python.model_parameters" />
-        <item itemvalue="Python.model_optimiser_trust_constr (1)" />
-        <item itemvalue="Python.model_optimiser_TNC" />
       </list>
     </recent_temporary>
   </component>
@@ -341,14 +419,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="837" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24876674" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32779455" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32751676" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -403,15 +482,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/subsystem_light/TNCFalseFalse.svg" />
     <entry file="file://$PROJECT_DIR$/subsystem_light/18334F8D467FB35F.png" />
-    <entry file="file://$PROJECT_DIR$/subsystem_light/Nelder-MeadTrueFalse.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsystem_light/Trust-ConstrTrueFalse.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/room_outline_constr_alt.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_light/Nelder-MeadTrueFalse.svg" />
+    <entry file="file://$PROJECT_DIR$/subsystem_light/Trust-ConstrTrueFalse.svg" />
+    <entry file="file://$PROJECT_DIR$/classes/room_outline_constr_alt.png" />
     <entry file="file://$PROJECT_DIR$/classes/room_outline_constr.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -426,13 +499,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="53" column="52" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="53" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC.py" />
     <entry file="file://$PROJECT_DIR$/subsystem_light/model_optimiser_nelder_mead.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
@@ -440,25 +507,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/system_level/Trust-ConstrTrueTruetest.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/cost.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/system_level/Trust-ConstrTrueTruetest.svg" />
     <entry file="file://$PROJECT_DIR$/system_level/model_optimiser_trust_constr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="25" column="25" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subsystem_light/Trust-ConstrTrueTrue.svg">
-      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/functions/intensity_distribution.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -467,24 +522,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/model_parameters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="52" column="41" lean-forward="true" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/test_distribution_plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="102" column="60" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subsystem_light/model_optimiser_trust_constr.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="42" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="53" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions/cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_light/Trust-ConstrTrueTrue.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTruetest.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrueConstrShow.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plots/Sys_Trust-ConstrTrueTrue.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/test_distribution_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1622">
+          <caret line="127" column="13" selection-start-line="127" selection-start-column="13" selection-end-line="127" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/model_parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_trust_constr_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#62#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

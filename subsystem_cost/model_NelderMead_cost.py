@@ -56,5 +56,5 @@ if __name__ == '__main__':
 
     model = NelderMeadModel()
 
-    PlotTestDistribution(model.result.x, model.name, refl=model.refl, save_fig=model.save_fig, fig_name=model.name)
+    PlotTestDistribution(model.result.x, model.name, refl=model.refl, save_fig=model.save_fig, fig_name=model.name,cost_subsystem= True)
     #AnimateDistribution(model.data, model.name, True, model.name)

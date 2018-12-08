@@ -116,21 +116,16 @@ class PlotTestDistribution:
         for i in range(MP.N_LAMPS):
 
             lamp_position = [self.lamp_locs[2 * i], self.lamp_locs[2 * i + 1]]
-            print("lamp_position: ", lamp_position)
-            print("position first plug: ", self.firstplug_position)
-            print("position second plug: ", self.secondplug_position)
             # distance to first plug and second plang
             d_fp = list(map(op.sub, lamp_position, self.firstplug_position))
             d_sp = list(map(op.sub, lamp_position, self.secondplug_position))
-            print("distance from first plug to lamp: ", d_fp)
-            print("distance from second plug to lamp: ", d_sp)
 
             # therefore cable length for L shape
             l_fp = (abs(d_fp[0]) + abs(d_fp[1]))
             l_sp = (abs(d_sp[0]) + abs(d_sp[1]))
 
-            print("cable length to plug 1: ", l_fp)
-            print("cable length to plug 2: ", l_sp)
+            #print("cable length to plug 1: ", l_fp)
+            #print("cable length to plug 2: ", l_sp)
 
             # Seems to be x1, x2,y1,y2 - look into this
             if l_fp <= l_sp:
@@ -149,6 +144,7 @@ class PlotTestDistribution:
         plt.suptitle(self.name + " Optimisation", fontweight='bold')
         plt.title("Constraints: " + str(self.constrained) + ", Minimum: " + str(round(minimum, 2)) +
                   ", Cost: " + str(round(total_cost, 2)), fontsize='large')
+
         plt.xlabel('Room X-Position (cm)')
         plt.ylabel('Room Y-Position (cm)')
         # Export figure

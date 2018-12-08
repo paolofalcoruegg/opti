@@ -65,5 +65,5 @@ if __name__ == '__main__':
 
     model = TrustConstrModel()
     PlotTestDistribution(model.result.x, model.name, refl=model.refl, save_fig=model.save_fig, fig_name=model.name,
-                         constrained=model.constrained)
+                         constrained=model.constrained, cost_subsystem=True)
     #AnimateDistribution(model.data, model.name, True, model.name)
