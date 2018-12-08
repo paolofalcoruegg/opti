@@ -14,7 +14,6 @@ def cost_obj_fun(variables):
 
     # Power would need to be 50 or 120 depending on which lamp it is reffereing to
     total_power = sum(MP.LAMP_POW)
-    print (total_power)
 
     '''
     There are 7 variables in total, in a range of 4 iterations of i (0,1,2,3), where for 0,1,2 is for lamp  
@@ -40,12 +39,12 @@ def cost_obj_fun(variables):
     c_initial = (c_cable_tot + c_tot_lamp_cost + c_work)
     c_tot = c_initial + c_operation
 
-    print("Solution with positions: ", variables,
-          "initial cost ", c_initial,
-          "of which total cable cost", c_cable_tot,
-          "and total lamp cost ", c_tot_lamp_cost,
-          "cost of operation", c_operation,
-          "with total cost: ", c_tot)
+    # print("Solution with positions: ", variables,
+    #       "initial cost ", c_initial,
+    #       "of which total cable cost", c_cable_tot,
+    #       "and total lamp cost ", c_tot_lamp_cost,
+    #       "cost of operation", c_operation,
+    #       "with total cost: ", c_tot)
 
 
     return c_tot

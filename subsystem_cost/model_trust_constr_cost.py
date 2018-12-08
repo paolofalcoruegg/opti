@@ -25,11 +25,9 @@ class TrustConstrModel:
         if self.save_log:
             self.data = []
 
-
         if self.constrained:
             self.constraints = (LinearConstraint(MP.CONSTRAINT_MAT_EXT, MP.LOWER_BOUND_EXT, MP.UPPER_BOUND_EXT),
-                                NonlinearConstraint(functional_constraint, -np.inf, 0, jac='cs', hess=BFGS())
-            )
+                                NonlinearConstraint(functional_constraint, -np.inf, 0, jac='cs', hess=BFGS()))
         else:
             self.constraints = ()
 

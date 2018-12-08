@@ -111,8 +111,8 @@ class MP:
     """
 
     # Weight of different subsystems
-    WEIGHT_LIGHT = 1
-    WEIGHT_COST = 1
+    WEIGHT_LIGHT = 0.5
+    WEIGHT_COST = 1 - WEIGHT_LIGHT
 
 """
 FUNCTIONAL CONSTRAINTS

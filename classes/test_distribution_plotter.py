@@ -19,7 +19,8 @@ class PlotTestDistribution:
                  save_fig=False,
                  fig_name='',
                  constrained=False,
-                 cost_subsystem=False):
+                 cost_subsystem=False,
+                 weight=-1.0):
 
         # These cannot be taken from the enum, as they vary upon each instatiation
         self.lamp_locs = lamp_locs
@@ -29,6 +30,7 @@ class PlotTestDistribution:
         self.fig_name = fig_name
         self.constrained = constrained
         self.cost_subsystem = cost_subsystem
+        self.weight = weight
 
         # Define plugs position
         self.firstplug_position = MP.F_PLUG_POSITION
@@ -69,8 +71,10 @@ class PlotTestDistribution:
 
         # Layout & Titles
         plt.suptitle(self.name + " Optimisation", fontweight='bold')
+
         plt.title("Reflections: " + str(self.refl) + ", Constraints: " + str(self.constrained)
                   + ", Minimum: " + str(round(minimum, 2)), fontsize='large')
+
         plt.xlabel('Room X-Position (cm)')
         plt.ylabel('Room Y-Position (cm)')
 
@@ -142,8 +146,13 @@ class PlotTestDistribution:
 
         # Layout & Titles
         plt.suptitle(self.name + " Optimisation", fontweight='bold')
-        plt.title("Constraints: " + str(self.constrained) + ", Minimum: " + str(round(minimum, 2)) +
-                  ", Cost: " + str(round(total_cost, 2)), fontsize='large')
+
+        if self.weight <= 0.0:
+            plt.title("Constraints: " + str(self.constrained) + ", Minimum: " + str(round(minimum, 2)) +
+                      ", Cost: " + str(round(total_cost, 2)), fontsize='large')
+        else:
+            plt.title("Constraints: " + str(self.constrained) + ", Minimum: " + str(round(minimum, 2)) +
+                      ", Cost: " + str(round(total_cost, 2)) + " Weight (Light): " + str(self.weight), fontsize='large')
 
         plt.xlabel('Room X-Position (cm)')
         plt.ylabel('Room Y-Position (cm)')
@@ -159,4 +168,5 @@ class PlotTestDistribution:
 
 if __name__ == '__main__':
 
-    PlotTestDistribution((1, 1, 1.5, 2, 3, 2.5), 'Test', True, False, '', True, True)
+    PlotTestDistribution([1.19861974, 0.96961294, 1.6086077 , 1.98102811, 3.67479242, 1.18626474, 0.26990641],
+                         'Trust-Constr', True, True, 'Sys_lvl', True, True, 1.0)
