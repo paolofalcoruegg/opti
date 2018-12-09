@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab717940-6c01-4de6-bad6-662e8157454d" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change afterPath="$PROJECT_DIR$/system_level/pareto.py" afterDir="false" />
+=======
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/model_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/model_parameters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/classes/test_distribution_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/test_distribution_plotter.py" afterDir="false" />
@@ -85,25 +88,25 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="png" value="6" />
-          <entry key="py" value="12" />
+          <entry key="py" value="14" />
           <entry key="svg" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="6" />
-          <entry key="Python" value="12" />
+          <entry key="Python" value="14" />
           <entry key="SVG" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="257" />
+          <entry key="py" value="261" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="257" />
+          <entry key="Python" value="261" />
         </counts>
       </usages-collector>
     </session>
@@ -120,17 +123,50 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/system_level/pareto.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
               <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
+=======
+        <entry file="file://$PROJECT_DIR$/classes/model_parameters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC_cost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="349">
+              <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/system_level/model_optimiser_trust_constr.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -144,12 +180,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
         <entry file="file://$PROJECT_DIR$/system_level/pareto.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="150">
               <caret line="10" column="111" lean-forward="true" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="111" />
             </state>
           </provider>
+=======
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTruetest.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrue.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTrueConstrShow.png">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/plots/Sys_Trust-ConstrTrueTrue.png">
+          <provider selected="true" editor-type-id="images" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
         </entry>
       </file>
     </leaf>
@@ -390,7 +451,14 @@
         <item itemvalue="Python.test_distribution_plotter" />
         <item itemvalue="Python.model_optimiser_trust_constr (1)" />
         <item itemvalue="Python.model_trust_constr_cost" />
+<<<<<<< HEAD
         <item itemvalue="Python.model_optimiser_trust_constr" />
+=======
+        <item itemvalue="Python.model_NelderMead_cost" />
+        <item itemvalue="Python.model_optimiser_trust_constr" />
+        <item itemvalue="Python.test_distribution_plotter" />
+        <item itemvalue="Python.model_parameters" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
       </list>
     </recent_temporary>
   </component>
@@ -424,7 +492,11 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
+<<<<<<< HEAD
       <window_info anchor="bottom" id="Run" order="2" weight="0.43504533" />
+=======
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32751676" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,6 +591,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC_cost.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="334">
@@ -536,6 +609,17 @@
           </folding>
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/functions/cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="25" column="80" selection-start-line="25" selection-start-column="80" selection-end-line="25" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_light/Trust-ConstrTrueTrue.svg">
+      <provider selected="true" editor-type-id="images" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
     </entry>
     <entry file="file://$PROJECT_DIR$/plots/Trust-ConstrTrueTruetest.svg">
       <provider selected="true" editor-type-id="images" />
@@ -576,6 +660,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/system_level/pareto.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -589,10 +674,29 @@
           <caret line="81" column="26" lean-forward="true" selection-start-line="81" selection-end-line="82" />
           <folding>
             <element signature="e#0#62#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_optimiser_TNC_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="24" lean-forward="true" selection-start-line="46" selection-start-column="24" selection-end-line="46" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/subsystem_cost/model_NelderMead_cost.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="58" column="135" selection-start-line="58" selection-start-column="135" selection-end-line="58" selection-end-column="135" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/classes/test_distribution_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1078">
@@ -607,6 +711,12 @@
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/classes/model_parameters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="83" column="25" selection-start-line="83" selection-start-column="25" selection-end-line="83" selection-end-column="25" />
+>>>>>>> e063936de06c763d1d9d699845d64af882763617
         </state>
       </provider>
     </entry>
