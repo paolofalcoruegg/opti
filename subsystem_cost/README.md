@@ -26,7 +26,8 @@ Derivation
 
 Please refer to the report for nomenclature.
 
-![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Derivation_cost.png)
-![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Obj_fun_constrains.png)
-![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Constrains_2.png)
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Derivation/Problem_formulation.png)
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Derivation/Obj_fun.png)
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Derivation/Constrains_1.png)
+![Derivation](https://github.com/pa17/opti/blob/master/subsystem_cost/Derivation/Constrains_2.png)
 
