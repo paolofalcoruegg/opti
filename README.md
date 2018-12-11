@@ -17,9 +17,9 @@ Contents
 
 This repository contains the report as well as all the code to obtain the results obtained. The directory structure relevant for marking is:
 
-system_level      Contai  ns the system-level optimisation
+[system_level](https://github.com/pa17/opti/tree/master/system_level)     Contains the system-level optimisation
 
-subsystem_cost    Contains Bea Lopez-Neira's individual contribution
+[subsystem_cost](https://github.com/pa17/opti/tree/master/subsystem_cost)    Contains Bea Lopez-Neira's individual contribution
 
 [subsystem_light](https://github.com/pa17/opti/tree/master/subsystem_light)   Contains Paolo's individual contribution
 
