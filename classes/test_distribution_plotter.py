@@ -22,7 +22,7 @@ class PlotTestDistribution:
                  cost_subsystem=False,
                  weight=-1.0):
 
-        # These cannot be taken from the enum, as they vary upon each instatiation
+        # These cannot be taken from the enum, as they vary upon each initialisation
         self.lamp_locs = lamp_locs
         self.name = name
         self.refl = refl
@@ -88,11 +88,13 @@ class PlotTestDistribution:
 
     def plot_cable_distribution(self):
         """
-               Calculates the intensity distribution within a room with n number of light sources
+               Calculate the position of the cables
+               Also plot the the intensity distribution within a room with n number of light sources
+               The later one is obtained from the light subsystem
                """
 
-        #light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
         light_intensity, minimum, minimum_coordinates = get_intensity_distr(self.lamp_locs, self.refl)
+
         total_cost = cost_obj_fun(self.lamp_locs)
 
         # Fill masked areas (lamps) with maximum value
@@ -116,22 +118,21 @@ class PlotTestDistribution:
         ax.plot(minimum_coordinates[1], minimum_coordinates[0], 'ro', markersize=12)
 
 
-        # plot cost
+        #Plot cost
         for i in range(MP.N_LAMPS):
 
             lamp_position = [self.lamp_locs[2 * i], self.lamp_locs[2 * i + 1]]
-            # distance to first plug and second plang
+            # Distance to first plug and second plug
             d_fp = list(map(op.sub, lamp_position, self.firstplug_position))
             d_sp = list(map(op.sub, lamp_position, self.secondplug_position))
 
-            # therefore cable length for L shape
+            # Therefore cable length for L shape
             l_fp = (abs(d_fp[0]) + abs(d_fp[1]))
             l_sp = (abs(d_sp[0]) + abs(d_sp[1]))
 
-            #print("cable length to plug 1: ", l_fp)
-            #print("cable length to plug 2: ", l_sp)
 
-            # Seems to be x1, x2,y1,y2 - look into this
+            #Connect lamp cable to nearest plug
+
             if l_fp <= l_sp:
                 plt.plot([100 * self.firstplug_position[0], 100 * self.lamp_locs[2 * i]],
                          [100 * self.firstplug_position[1], 100 * self.firstplug_position[1]], "grey")

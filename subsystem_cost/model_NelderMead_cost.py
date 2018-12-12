@@ -1,7 +1,5 @@
 from classes.model_parameters import MP
 from classes.test_distribution_plotter import PlotTestDistribution
-from classes.animate_distribution import AnimateDistribution
-from functions.intensity_distribution import get_intensity_distr
 from functions.cost import cost_obj_fun
 from scipy.optimize import minimize
 import time
@@ -18,15 +16,14 @@ class NelderMeadModel:
 
         # Parameters
         self.name = 'Nelder-Mead'
-        self.refl = True
+        self.refl = False
         self.save_fig = False
         self.save_log = False
 
         if self.save_log:
             self.data = []
 
-        print("Welcome! You are using a Nelder-Mead optimiser.")
-        print("Reflections: ", self.refl)
+        print("You are using a Nelder-Mead optimiser.")
 
         time.sleep(1)
 
@@ -44,10 +41,9 @@ class NelderMeadModel:
         of lamp composed by price and efficiency
         Call the function cost
         """
-        # Calculate current intensity distribution
+        # Calculate current cost
         c_tot = cost_obj_fun(variables)
-
-        print("Iteration: ", self.counter)
+        print("Iteration: ", self.counter, "Positions and efficiency", variables, "total cost", c_tot)
         self.counter += 1
         return c_tot
 
@@ -57,4 +53,3 @@ if __name__ == '__main__':
     model = NelderMeadModel()
 
     PlotTestDistribution(model.result.x, model.name, refl=model.refl, save_fig=model.save_fig, fig_name=model.name,cost_subsystem= True)
-    #AnimateDistribution(model.data, model.name, True, model.name)

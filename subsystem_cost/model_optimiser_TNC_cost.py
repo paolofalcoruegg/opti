@@ -1,6 +1,5 @@
-import numpy as np
+
 from classes.model_parameters import MP
-from classes.room import Room
 from scipy.optimize import minimize
 from functions.cost import cost_obj_fun
 from classes.test_distribution_plotter import PlotTestDistribution
@@ -15,10 +14,13 @@ class Model:
 
         # To keep track of the iterations
         self.counter = 0
-        self.varsnumber = 4 #each iteration is going to give two values (x,y for three times and c1,c2 for characteristic
-        # These will restult in 8 variables = 6 position, and characteristic in 2 (cost and efficiency)
+        # Number of set of variables (Iterations 0 to 2 will give two solutions, x and y for each of the lamps
+        # Iteration 3 will give one solution, efficiency
+        self.varsnumber = 4
 
-        # Objective function. We want to maximise this
+        print("You are using a Nelder-Mead optimiser.")
+
+        # Set the minimizer
         self.result = minimize(self.obj_fun, MP.INITIAL_SOLUTION, method=method)
 
         # What is the result of the optimisation?
@@ -32,10 +34,10 @@ class Model:
         of lamp composed by price and efficiency
         Call the function cost
         """
-        # Calculate current intensity distribution
+        # Calculate current cost
         c_tot = cost_obj_fun(variables)
 
-        print("Iteration: ", self.counter)
+        print("Iteration: ", self.counter, "Positions and efficiency", variables, "total cost", c_tot)
         self.counter += 1
 
         return c_tot
@@ -45,9 +47,6 @@ if __name__ == '__main__':
 
     # Start Hand engine
     model = Model('TNC')
-
-    #PlotTestDistribution(model.result.x, "TNC")
-    #PlotTestDistribution((1,1,2,2,3,3), "TNC")
 
 
     PlotTestDistribution(model.result.x, "TNC", False, False, '', True, True)

@@ -82,7 +82,6 @@ class MP:
     ENERGY_COST = 0.12
     AVG_HOURS_PER_YEAR = float(2500 / 1000)
     INVESTMENT_FACTOR = 3
-    # Bea's add
     # Initial characteristics for lamps
     INITIAL_SOLUTION = np.array([0.68978269, 0.98767149, 1.78447148, 2.79305784, 3.66072114, 2.22234, 0.2])
 

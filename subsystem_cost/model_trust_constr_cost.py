@@ -1,7 +1,7 @@
 from classes.model_parameters import MP, functional_constraint
 from classes.test_distribution_plotter import PlotTestDistribution
 from functions.cost import cost_obj_fun
-from scipy.optimize import minimize, BFGS, SR1, LinearConstraint, NonlinearConstraint
+from scipy.optimize import minimize, BFGS, LinearConstraint, NonlinearConstraint
 import time
 import numpy as np
 
@@ -17,7 +17,7 @@ class TrustConstrModel:
 
         # Parameters
         self.name = 'Trust-Constr'
-        self.refl = True
+        self.refl = False
         self.save_fig = False
         self.save_log = False
         self.constrained = True
@@ -31,12 +31,10 @@ class TrustConstrModel:
         else:
             self.constraints = ()
 
-        print("Welcome! You are using a trust-constr optimiser.")
-        print("Reflections: ", self.refl)
+        print("You are using a trust-constr optimiser.")
         print("Constraints: ", self.constrained)
 
         time.sleep(1)
-        # 360 = 5000?
         # Objective function. We want to maximise this
         self.result = minimize(self.obj_fun, MP.INITIAL_SOLUTION, method='trust-constr', jac='3-point',
                                constraints=self.constraints, hess=BFGS(exception_strategy='damp_update'))
@@ -51,10 +49,10 @@ class TrustConstrModel:
         of lamp composed by price and efficiency
         Call the function cost
         """
-        # Calculate current intensity distribution
+        # Calculate current cost
         c_tot = cost_obj_fun(variables)
 
-        print("Iteration: ", self.counter)
+        print("Iteration: ", self.counter, "Positions and efficiency", variables, "total cost", c_tot)
         self.counter += 1
         return c_tot
 
@@ -64,4 +62,3 @@ if __name__ == '__main__':
     model = TrustConstrModel()
     PlotTestDistribution(model.result.x, model.name, refl=model.refl, save_fig=model.save_fig, fig_name=model.name,
                          constrained=model.constrained, cost_subsystem=True)
-    #AnimateDistribution(model.data, model.name, True, model.name)
