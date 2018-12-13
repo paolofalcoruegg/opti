@@ -21,7 +21,7 @@ Open the .ipynb file and follow instructions within the notebook
 
 Typical performance of the notebook:
 
-Execution time: about 7 minutes
+Execution time: about 7 minutes (ca. 7500 iterations)
 
 Processor and OS: 2.5 GHz Intel Core i5 Macbook Pro, 8GB RAM
 
