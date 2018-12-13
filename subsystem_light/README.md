@@ -9,7 +9,7 @@ The code runs in Python 3.X and has the following dependencies:
 * numpy
 * jupyter (for tutorial only)
 
-You can install all of these with the following command: pip3 install numpy scipy matplotlib jupyter
+Please note that you might have to install anaconda if you are not working from a UNIX-based system. You can install all of these with the following command: pip3 install numpy scipy matplotlib jupyter
 
 
 Executing the Code
