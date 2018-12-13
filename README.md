@@ -1,7 +1,7 @@
-DE4 Opti Coursework 2018/19: Code Submission
+DE4 Opti Coursework: Code Submission (Bea Lopez-Neira, Paolo Rüegg)
 ============
 
-Please find the code, report and tutorials for our (Bea Lopez-Neira, Paolo Rüegg) team's optimisation project.
+Please find the code, report and tutorials for our team's optimisation project in this repository.
 
 The code runs in Python 3.X and has the following dependencies:
 
@@ -10,7 +10,7 @@ The code runs in Python 3.X and has the following dependencies:
 * numpy
 * jupyter (for tutorials only)
 
-You can install all of these with the following command: pip3 install numpy scipy matplotlib jupyter
+Please note that you might have to install anaconda if you are not working from a UNIX-based system. You can install all of these with the following command: pip3 install numpy scipy matplotlib jupyter
 
 Contents
 ----------
